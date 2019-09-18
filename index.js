@@ -103,9 +103,14 @@ $(".Github").click(function () {
 
 // lien twitter
 
-$(".social_media").click(function () {
+$(".projets").click(function () {
 
-    window.open ("https://twitter.com/DrModj0");
+    window.location = "Projets.html";
+});
+
+$(".projetsA").click(function () {
+
+    window.location = "index.html";
 });
 
 // lien linkedin

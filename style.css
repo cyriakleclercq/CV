@@ -40,7 +40,13 @@ body {
     width: 66.66%;
 }
 
-.profil, .experience, .education, .Github,.social_media, .contact,.portfolio {
+.centre> a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profil, .experience, .education, .Github,.projets, .contact,.portfolio {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -58,8 +64,12 @@ body {
     width: 6.25vw;
 
 }
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
+}
+
+.decoration {
+    text-decoration: underline;
 }
 
 .resumeColor, .GithubColor {
@@ -166,7 +176,7 @@ p {
     text-align: center;
 }
 
-.profilA, .parcoursA, .experienceA, .contactA {
+.profilA, .parcoursA, .experienceA, .contactA, .projetsA {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,17 +186,38 @@ p {
 
 @media (max-width: 600px) {
 
+    .principale_gauche {
+        float: none;
+        font-size: 1vh;
+        width: 100%;
+    }
+
+    .principale_droite {
+        display: none;
+    }
+
+    .bloc, .resume {
+        width: 100%;
+    }
+
+    .img {
+        width: auto;
+    }
+
+    p {
+        font-size: 2vh;
+    }
 }
 
 
-@media (max-device-width: 800px) and (orientation: landscape) {
+@media (max-width: 1388px) {
     html {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
 
     }
 
-    h1,h2 {
-        font-size: 15px;
+    h1,h2,h3 {
+        font-size: 3vh;
     }
 }
